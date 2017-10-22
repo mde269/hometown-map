@@ -2,117 +2,122 @@
 <html>
 
 <head>
-	<meta charset=utf-8 />
-	<title>Web Page Template</title>
-	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <meta charset=utf-8 />
+    <title>Mappy Things</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
-	<style>
-		body {
-			margin: 0;
-			padding: 0;
-			background: #f5f5f5;
-			font-family: "Noto Sans", sans-serif;
-			color: #3d3d3d;
-		}
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
 
-		section {
-			width: 960px;
-			margin: 20px auto;
-		}
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            font-family: "Noto Sans", sans-serif;
+            color: #3d3d3d;
+        }
 
-		h1 {
-			width: 960px;
-			margin: 20px auto;
-			font-family: Lora, serif;
-			letter-spacing: .04em;
-		}
+        section {
+            width: 960px;
+            margin: 20px auto;
+        }
 
-		h2 {
-			font-family: Lora, serif;
-			letter-spacing: .04em;
-		}
+        h1 {
+            width: 960px;
+            margin: 20px auto;
+            font-family: "Lora", serif;
+            letter-spacing: .04em;
+        }
 
-		p {
-			font-size: 1em;
-			line-height: 1.5em;
-		}
+        h2 {
+            width: 960px;
+            margin: 20px auto;
+            font-family: "Lora", serif;
+            letter-spacing: .04em;
+        }
 
-		a {
-			color: #005daa;
-			font-weight: bold;
-			text-decoration: none;
-		}
+        p {
+          width: 960px;
+          margin: 20px auto;
+            font-size: 1em;
+            line-height: 1.5em;
+        }
 
-		a:hover {
-			text-decoration: underline;
-		}
+        a {
+            color: #008000;
+            font-weight: bold;
+            text-decoration: none;
+        }
 
-		ul {
-			padding-left: 20px;
-		}
+        a:hover {
+            text-decoration: underline;
+        }
 
-		li {
-			margin: 10px 0
-		}
-		#map {
-			width: 960px;
-			height: 540px;
-			margin: 10px auto;
-			border: 2px solid #d3d3d3;
-		}
-	</style>
+        ul {
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 20px 0
+        }
+
+
+        #map {
+            width: 960px;
+            height: 540px;
+            margin: 10px auto;
+            border: 2px solid #d3d3d3;
+        }
+    </style>
 </head>
 
 <body>
 
-	<h1>Galactic Sector QQ7 Active J Gamma</h1>
+    <h1>What do you think about life in Pune?</h1>
 
-	<div id='map'></div>
+    <div id='map'></div>
 
-	<section>
-		<h2>Home to Sun Zarss and Preliumtarn</h2>
-		<p>Additional information about <a href="#">the famed Sevorbeupstry and Quentulus Quazgar Mountains</a> can be found in 'Life, the Universe and Everything' and 'So Long, and Thanks for all the Fish' </p>
+    <p>Considered to be the cultural capital of Maharashtra, Pune is known as "Oxford of the East" due to the presence of several well-known educational institutions in the city. The city has emerged as a major educational hub in recent decades, with nearly half of the total international students in the country studying in Pune. Since the 1950s and 1960s, Pune has had a traditional old-economic base as most of the old industries continue to grow. The city is known for its manufacturing and automobile industries, as well as for research institutes of information technology (IT), education, management and training, which attracts students, and professionals from India, South East Asia, the Middle East and Africa -- <a href="https://en.wikipedia.org/wiki/Pune">Via Wikipedia</a>
+    </p>
 
-		<ul>
-			<li>See my projects on GitHub: <a href="https://github.com/mde269">Marissa Defratti</a></li>
-		</ul>
-	</section>
+    <h3>Comments from local residents</h3>
 
-	<script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
-	<script>
+        <ul>
+            <li><a href="https://www.quora.com/What-do-you-think-about-life-in-Pune">People who are hard core Punekars were pretty darn hostile at first. They have this air of superiority which they will not fail to show off - ever. I wouldn't be surprised if this bullet point gathered sardonic comments.</a></li>
+            <li><a href="https://www.quora.com/profile/Kaivalya-Apte">Many beautiful places to hang out with your friends,family. If you like adventure sports and amusement park kind of stuff you have Della and Adlabs Imagica very near to Pune.</a></li>
+            <li><a href='https://www.quora.com/profile/Kiran-Kumar-Pasam'>Pune is all about less traffic, less pollution, less threats.. cost of living is reasonable when compared to cities like Banglore, Chennai, Mumbai. But may be more than hyderabad. Pune has got a lot of temples to visit, a lot of malls, a lot of places to visit nearby, beautiful girls all around, its more of fun actually.</a></li>
+        </ul>
 
-		// map options
-		var options = {
-			center: [40.4406248, -79.9958864], // lat/lon values
-			zoom: 13
-		}
 
-		// create a Leaflet map in our division container with id of 'map'
-		var map = L.map('map', options);
 
-		// request some basemap tiles and add to the map
-		var tiles = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
-			attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-			subdomains: 'abcd',
-			maxZoom: 19
-		}).addTo(map);
 
-		// write a custom message for the Leaflet tooltip
-		var message = 'Pittsburgh Hitchhikers Guild';
+        <script>
+            var options = {
+                center: [18.50419, 73.85309],
+                zoom: 12
+            }
 
-		// add a marker to the center of the map and open the tooltip
-		L.marker(map.getCenter())
-			.bindTooltip(message)
-			.addTo(map)
-			.openTooltip();
+            var map = L.map('map', options);
 
-	</script>
+            var tiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(map);
+
+            var message = 'The Oxford of the East';
+
+            L.marker(map.getCenter())
+                .bindTooltip(message)
+                .addTo(map)
+                .openTooltip();
+        </script>
 
 </body>
 
