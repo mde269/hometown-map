@@ -4,6 +4,7 @@
 <head>
     <meta charset=utf-8 />
     <title>Mappy Things</title>
+    <!-- We have a few changes to the labs since Feb. I'll apply some of those and see what you think -->
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
@@ -24,27 +25,28 @@
         }
 
         section {
-            width: 960px;
+            width: 80%; /* Make section size relative to page */
             margin: 20px auto;
         }
 
         h1 {
-            width: 960px;
-            margin: 20px auto;
+            /* width: 960px; Remove width and margin properties and enclose in section element
+            margin: 20px auto; */
             font-family: "Lora", serif;
             letter-spacing: .04em;
+            font-size: 2em; /* Make larger than normal h1 header? */
         }
 
         h2 {
-            width: 960px;
-            margin: 20px auto;
+          /* width: 960px; Remove width and margin properties and enclose in section element
+          margin: 20px auto; */
             font-family: "Lora", serif;
             letter-spacing: .04em;
         }
 
         p {
-          width: 960px;
-          margin: 20px auto;
+          /* width: 960px; Remove width and margin properties and enclose in section element
+          margin: 20px auto; */
             font-size: 1em;
             line-height: 1.5em;
         }
@@ -69,7 +71,7 @@
 
 
         #map {
-            width: 960px;
+            width: 100%; /* make 100% of container, the section element! */
             height: 540px;
             margin: 10px auto;
             border: 2px solid #d3d3d3;
@@ -78,14 +80,17 @@
 </head>
 
 <body>
-
+<section>
     <h1>What do you think about life in Pune?</h1>
-
+    </section>
+<section>
     <div id='map'></div>
-
+  </section>
+<section>
     <p>Considered to be the cultural capital of Maharashtra, Pune is known as "Oxford of the East" due to the presence of several well-known educational institutions in the city. The city has emerged as a major educational hub in recent decades, with nearly half of the total international students in the country studying in Pune. Since the 1950s and 1960s, Pune has had a traditional old-economic base as most of the old industries continue to grow. The city is known for its manufacturing and automobile industries, as well as for research institutes of information technology (IT), education, management and training, which attracts students, and professionals from India, South East Asia, the Middle East and Africa -- <a href="https://en.wikipedia.org/wiki/Pune">Via Wikipedia</a>
     </p>
-
+</section>
+<section>
     <h3>Comments from local residents</h3>
 
         <ul>
@@ -93,6 +98,7 @@
             <li><a href="https://www.quora.com/profile/Kaivalya-Apte">Many beautiful places to hang out with your friends,family. If you like adventure sports and amusement park kind of stuff you have Della and Adlabs Imagica very near to Pune.</a></li>
             <li><a href='https://www.quora.com/profile/Kiran-Kumar-Pasam'>Pune is all about less traffic, less pollution, less threats.. cost of living is reasonable when compared to cities like Banglore, Chennai, Mumbai. But may be more than hyderabad. Pune has got a lot of temples to visit, a lot of malls, a lot of places to visit nearby, beautiful girls all around, its more of fun actually.</a></li>
         </ul>
+    </section>
 
 
 
@@ -104,6 +110,8 @@
             }
 
             var map = L.map('map', options);
+
+            /* Nice base map change */
 
             var tiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
